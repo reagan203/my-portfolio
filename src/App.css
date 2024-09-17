@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+/* App.css */
+
+/* Fullscreen background color based on light or dark mode */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 90%;
+  width: 90%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-fluid {
+  height: vh;
+  width: 99vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Dark Mode Styling */
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* App.css */
+
+.navbar {
+  border-bottom: 1px solid #eaeaea;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-nav {
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
+.navbar-toggler {
+  border: none;
+}
+
+.btn-outline-light {
+  border-color: #00d1b2;
+  color: #00d1b2;
+}
+
+
+.dark-mode .navbar {
+  background-color: #2a2a2a;
+}
+
+/* Fullscreen Content Container */
+/* / */
+
+/* Stylish Dark Mode Toggle Button */
+.btn-outline-dark {
+  border-color: #5a5a5a;
+  color: #5a5a5a;
+}
+
+.dark-mode .btn-outline-dark {
+  border-color: #f5f5f5;
+  color: #f5f5f5;
+}
+
+/* Smooth animations */
+.btn-outline-dark {
+  transition: all 0.3s ease;
+}
+
+/* Navbar link styles */
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.dark-mode .nav-link {
+  color: #f5f5f5;
+}
+
+/* Dark Mode Toggle Button Hover Effect */
+.btn-outline-dark:hover {
+  background-color: #5a5a5a;
+  color: #fff;
+}
+
+.dark-mode .btn-outline-dark:hover {
+  background-color: #f5f5f5;
+  color: #000;
+}
+/* Keyframes for spin animation */
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Apply spin on hover */
+.profile-spin:hover {
+  animation: spin 2s linear infinite;
+}
+
+
+/* Glow effect on hover */
+.project-card:hover {
+  box-shadow: 0 0 15px rgba(0, 209, 178, 0.6);
+  filter: brightness(1.1);
+}
+
+
+
+/* Button glow on hover */
+.btn-outline-light:hover {
+  box-shadow: 0 0 20px rgba(0, 209, 178, 1);
+  color: #00d1b2;
+}
+
+
+
+/* App.css */
+body {
+  background: url('../public/wallpaper.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Adjust font if needed */
+}
+
+.container-fluid {
+  min-height: 100vh; /* Ensure container covers the full viewport height */
+  background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent overlay for better text visibility */
+}
+
+.dark-mode {
+  background: url('../public/wallpaper.jpg') no-repeat center center fixed; /* Optional: Different background for dark mode */
+  background-size: cover;
+}
+
+.content-container {
+  padding: 20px;
 }
