@@ -10,6 +10,20 @@ const CProjects = () => {
       image: '../terminal.png',
       repoLink: 'https://github.com/reagan203/terminal',
     },
+    {
+      id: 2,
+      title: 'Flask Task Manager',
+      description: 'A backend flask built webserver with jinja2',
+      image: '../task.png',
+      repoLink: 'https://github.com/reagan203/task-manager',
+    },
+    {
+      id:3,
+      title: 'Chat Bot',
+      description: 'A chat bot built using python and wikipedia Api that also carries out calculations',
+      image: '../chatbot.png',
+      repoLink: 'https://github.com/reagan203/chat-bro',
+    }
     // MORE 
   ];
 
